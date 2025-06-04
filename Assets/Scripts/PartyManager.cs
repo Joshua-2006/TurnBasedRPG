@@ -6,6 +6,13 @@ public class PartyManager : MonoBehaviour
 {
     [SerializeField] private PartyMemberInfo[] allMembers;
     [SerializeField] private List<PartyMember> currentParty;
+
+    [SerializeField] private PartyMemberInfo defaultPartyMember;
+
+    private void Awake()
+    {
+        AddMemberToPartyByName(defaultPartyMember.MemberName);
+    }
     public void AddMemberToPartyByName(string memberName)
     {
         for (int i = 0; i< allMembers.Length; i++)
@@ -27,6 +34,8 @@ public class PartyManager : MonoBehaviour
         }
     }
 }
+
+[System.Serializable]
 public class PartyMember
 {
     public string MemberName;

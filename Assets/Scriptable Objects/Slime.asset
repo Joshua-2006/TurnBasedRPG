@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06e1ece4f4d5375498736d7d7f21a048, type: 3}
   m_Name: Slime
   m_EditorClassIdentifier: 
-  EnemyName: 
-  BaseHealth: 0
-  BaseStr: 0
-  BaseInitiative: 0
+  EnemyName: Slime
+  BaseHealth: 1
+  BaseStr: 1
+  BaseInitiative: 1
   EnemyVisualPrefab: {fileID: 0}
